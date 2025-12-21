@@ -1,0 +1,17 @@
+{
+  "name": "04_modulos-do-npm",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Lucas dos Anjos de Souza",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.11",
+    "uuid": "^13.0.0"
+  }
+}
