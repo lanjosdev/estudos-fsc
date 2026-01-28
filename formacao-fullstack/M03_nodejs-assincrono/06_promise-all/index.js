@@ -89,7 +89,7 @@ const init = async () => {
         console.log(results);
     } 
     catch (error) {
-        // Obs: o Promise.allSettled não fará disparar o catch, mas o status da promise será "rejected".
+        // Obs: Mesmo que todas as promises falhem, o Promise.allSettled não ira lançar erro no catch. O erro de cada promise é armazenado no objeto status: 'rejected' do array de resultados.
         console.error(error.message); // mensagem legível
         // console.error(error.stack);   // stack trace para debug
     }
